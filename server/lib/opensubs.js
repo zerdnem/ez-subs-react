@@ -22,7 +22,7 @@ module.exports = {
               }
             });
           } else {
-            deferred.resolve(false);
+            deferred.resolve({ data: "No data" });
           }
         });
     });

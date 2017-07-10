@@ -3,12 +3,14 @@ import logo from "./logo.svg";
 import "./App.css";
 import axios from "axios";
 
-function LanguageItems(props) {
-  return (
-    <option>
-      {props.value}
-    </option>
-  );
+class LanguageItems extends Component {
+  render() {
+    return (
+      <option>
+        {this.props.value}
+      </option>
+    );
+  }
 }
 
 class App extends Component {
